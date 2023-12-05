@@ -1,0 +1,241 @@
+<!-- ====================================
+   This web page was developed using the
+   desktop first approach.
+========================================= -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- =========== fav icon ============ -->
+      <link rel="shortcut icon" href="./assets/images/fav-icon/favicon.png" type="image/png">
+      <title>DeliciousFoodies Restaurant</title>
+
+      <!-- ========== remix icons cdn ============= -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!-- ========= custom styles ============ -->
+      <link rel="stylesheet" href="./assets/css/index.css" type="text/css">
+
+      <!-- ========== load first custom scripts ======== -->
+      <script src="./assets/scripts/services.js" type="text/javascript"></script>
+      <script src="./assets/scripts/food-items-data.js" type="text/javascript"></script>
+
+      <!-- ========== custom scripts ======== -->
+      <script defer src="./assets/scripts/main.js" type="text/javascript"></script>
+   </head>
+   <body>
+      <header class="header">
+         <nav class="nav">
+            <div class="nav__container container d-flex">
+               <a href="#" class="nav__logo">Delicious<span>Foodies</span></a>
+
+               <!-- ========== navigation menu start ========= -->
+               <div class="nav__menu d-flex">
+                  <a href="#" class="nav__menu-link">Home</a>
+                  <a href="#services" class="nav__menu-link">Services</a>
+                  <a href="#about" class="nav__menu-link">About Us</a>
+                  <a href="#menu" class="nav__menu-link">Menu</a>
+                  <a href="#contact" class="nav__menu-link">Contact Us</a>
+                  
+                  <!-- ============= nav menu close button ============ -->
+                  <button type="button" class="nav__menu-close-btn">
+                     <i class="ri-close-line btn-icon"></i>
+                  </button>
+               </div>
+
+               <!-- ============== navigation buttons ============ -->
+               <div class="nav__btns d-flex">
+                  <!-- ============= theme toggle button ============= -->
+                  <button type="button" class="nav__theme-toggle-btn">
+                     <i class="ri-moon-line btn-icon"></i>
+                  </button>
+
+                  <!-- ========== cart open button ============== -->
+                  <button type="button" class="nav__cart-open-btn">
+                     <i class="ri-shopping-bag-line btn-icon"></i>
+
+                     <!-- ============== insert using javascript ============ -->
+                     <span class="nav__cart-total-quantity"></span>
+                  </button>
+
+                  <!-- ========= smaller devices nav menu open button ============ -->
+                  <button type="button" class="nav__menu-open-btn">
+                     <i class="ri-apps-line btn-icon"></i>
+                  </button>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <main>
+         <!-- ============= cart section ========== -->
+         <div class="cart d-grid">
+            <header class="cart__header d-grid">
+               <button type="button" class="cart__close-btn">
+                  <i class="ri-arrow-right-line btn-icon cart__close-btn-icon"></i>
+               </button>
+               <h2 class="cart__header-title">Your Cart</h2>
+            </header>
+
+            <!-- ======== insert using javascript ========= -->
+            <main class="cart__items-container d-grid"></main>
+
+            <footer class="cart__footer d-flex">
+               <h2 class="cart__footer-title">Total:</h2>
+               <p class="cart__footer-total-price"></p>
+            </footer>
+
+            <p class="cart__empty-text">Your Cart Is Empty</p>
+         </div>
+
+         <!-- ============ hero section ========= -->
+         <div class="section hero">
+            <div class="container hero__container d-grid">
+               <div class="hero__content">
+                  <h1 class="hero__title">Come And Enjoy The Best Dishes In Town!</h1>
+                  <p class="hero__statement">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, perspiciatis, quam esse, est nihil dolore beatae tenetur doloremque voluptates quo minima. Corrupti itaque tempore eligendi possimus qui nulla labore cum, temporibus minus voluptas iste, dolores, ipsa quia at debitis doloremque!
+                  </p>
+                  <a href="#menu" class="btn hero__btn">Explore Our Menu</a>
+               </div>
+               <div class="hero__slider">
+                  <div class="hero__slider-imgs">
+                     <img src="./assets/images/slider/slider-1.jpg" class="hero__slider-img">
+                     <img src="./assets/images/slider/slider-2.jpg" class="hero__slider-img">
+                     <img src="./assets/images/slider/slider-3.jpg" class="hero__slider-img">
+                     <img src="./assets/images/slider/slider-4.jpg" class="hero__slider-img">
+                     <img src="./assets/images/slider/slider-5.jpg" class="hero__slider-img">
+                  </div>
+                  <div class="hero__slider-dots d-flex">
+                     <span class="hero__slider-dot active"></span>
+                     <span class="hero__slider-dot"></span>
+                     <span class="hero__slider-dot"></span>
+                     <span class="hero__slider-dot"></span>
+                     <span class="hero__slider-dot"></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- ============ services section ========= -->
+         <section class="section services" id="services">
+            <h3 class="services__header-top-title">Our Services</h3>
+            <h2 class="services__main-title">Why Choose Us?</h2>
+
+            <!-- ======== insert using javascript ========= -->
+            <div class="container services__container d-grid"></div>
+         </section>
+
+         <!-- ============= about section ========== -->
+         <section class="section about" id="about">
+            <div class="container about__container d-grid">
+               <img src="./assets/images/dinner/dinner-3.jpg" class="about__img">
+               <div class="about__content">
+                  <h2 class="about__title">About Us</h2>
+                  <p class="about__text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt qui officia quas eum, ipsum quod minima ullam unde numquam! Ratione quia accusantium hic illo, labore exercitationem modi, nulla dignissimos assumenda minus at facere inventore quidem velit est nostrum sed qui corrupti consequuntur molestiae minima animi dolorum? Necessitatibus facilis tempora quae!
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         <!-- ============ menu section ============= -->
+         <section class="section" id="menu">
+            <div class="container">
+               <h2 class="menu__title">Our Menu</h2>
+
+               <!-- ========== menu buttons ========== -->
+               <div class="menu__btns-container d-flex">
+                  <button type="button" class="menu__btn active" data-filter-name="beverage">
+                     Beverage
+                  </button>
+                  <button type="button" class="menu__btn" data-filter-name="breakfast">Breakfast</button>
+                  <button type="button" class="menu__btn" data-filter-name="lunch">Lunch</button>
+                  <button type="button" class="menu__btn" data-filter-name="dinner">Dinner</button>
+                  <button type="button" class="menu__btn" data-filter-name="dessert">Dessert</button>
+               </div>
+
+               <!-- ======== insert using javascript ========= -->
+               <div class="menu__items-container d-grid"></div>
+            </div>
+         </section>
+
+         <!-- ============ contact section =========== -->
+         <section class="section" id="contact">
+            <div class="container">
+               <h3 class="contact__sub-title">Contact Us</h3>
+               <h2 class="contact__main-title">Let's Get In Touch</h2>
+               <div class="contact__form-container">
+                  <form action="" class="contact__form d-flex">
+                     <div class="contact__item d-flex">
+                        <label for="name" class="form__label">Name</label>
+                        <input type="text" name="name" id="name" autocomplete="off" required>
+                     </div>
+                     <div class="contact__item d-flex">
+                        <label for="email" class="form__label">Email Address</label>
+                        <input type="email" name="email" id="email" autocomplete="off" required>
+                     </div>
+                     <div class=" contact__item d-flex">
+                        <label for="message" class="form__label">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" autocomplete="off" required></textarea>
+                     </div>
+
+                     <!-- ============ contact form submit button =========== -->
+                     <button type="submit" class="contact__submit-btn">Send Message</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <footer class="footer d-flex">
+         <div class="container footer__container d-grid">
+            <div class="footer__item d-flex">
+               <a href="#" class="nav__logo footer__logo">
+                  Delicious<span>Foodies</span>
+               </a>
+               <p class="footer__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magnam recusandae, veritatis obcaecati reprehenderit cumque?
+               </p>
+               <div class="footer__icons d-flex">
+                  <i class="ri-facebook-fill btn-icon footer__icon"></i>
+                  <i class="ri-instagram-line btn-icon footer__icon"></i>
+                  <i class="ri-twitter-line btn-icon footer__icon"></i>
+                  <i class="ri-whatsapp-line btn-icon footer__icon"></i>
+               </div>
+            </div>
+            <div class="footer__item d-flex">
+               <h2 class="footer__title" id="menu__title">Our Menu</h2>
+               <div class="footer__menu-list d-flex">
+                  <p class="footer__menu-list-item">Beverage</p>
+                  <p class="footer__menu-list-item">Breakfast</p>
+                  <p class="footer__menu-list-item">Lunch</p>
+                  <p class="footer__menu-list-item">Dinner</p>
+                  <p class="footer__menu-list-item">Dessert</p>
+               </div>
+            </div>
+            <div class="footer__item d-flex">
+               <h2 class="footer__title">Quick Links</h2>
+               <div class="footer__quick-links d-flex">
+                  <p class="footer__quick-link">Services</p>
+                  <p class="footer__quick-link">About Us</p>
+                  <p class="footer__quick-link">Menu</p>
+                  <p class="footer__quick-link">Contact Us</p>
+               </div>
+            </div>
+            <div class="footer__item d-flex">
+               <h2 class="footer__title">Support</h2>
+               <div class="footer__suport-list d-flex">
+                  <p class="footer__support-item">Terms of Use</p>
+                  <p class="footer__support-item">Privacy Policy</p>
+               </div>
+            </div>
+         </div>
+         <p class="footer__copyright-text">
+            &copy; <span class="current-year"></span> Code Created By Tylor Coore. <span>All Rights Reserved</span>
+         </p>
+      </footer>
+   </body>
+</html>
